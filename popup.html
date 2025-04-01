@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard English</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 320px;
+            padding: 10px;
+        }
+        .word {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .type, .meaning, .example {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .example {
+            font-style: italic;
+            color: #555;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Today's Flashcard</h2>
+    <div id="flashcard">
+        <div class="word">Loading...</div>
+        <div class="type"></div>
+        <div class="meaning"></div>
+        <div class="example"></div>
+    </div>
+
+    <hr>
+
+    <h3>Add New Word</h3>
+    <input type="text" id="wordInput" placeholder="Word">
+    <input type="text" id="typeInput" placeholder="Type (e.g., Noun, Verb)">
+    <input type="text" id="meaningInput" placeholder="Meaning">
+    <input type="text" id="exampleInput" placeholder="Example Sentence">
+    <button id="addWordBtn">Add Word</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
